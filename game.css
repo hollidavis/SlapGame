@@ -12,3 +12,11 @@ main {
 img{
   background-size: contain;
 }
+
+.bg-wheat{
+  background-color: wheat;
+}
+
+.h-fit{
+  height: fit-content;
+}

@@ -13,27 +13,29 @@
 	<title>Slap Game</title>
 </head>
 
-<body>
-	<header class="container-fluid  bg-primary text-center p-3 ">
-		<h1>Slap Game</h1>
+<body class="bg-wheat">
+	<header class="container-fluid bg-dark text-center p-3 text-light">
+		<h1>🤜Punch Rocky🤛</h1>
 	</header>
 
 	<main class="container">
 		<div class="row my-4 justify-content-between">
-			<div class="col-5 bg-info p-0 text-center text-light rounded">
+			<div class="col-5 bg-dark p-0 text-center text-light rounded">
 				<img class="w-100 rounded-top" src="rocky.jpeg" alt="">
 				<h4>Name: Rocky</h4>
 				<h4>Health: <span id="health">--</span></h4>
 				<h4>Hits: <span id="hits">--</span></h4>
 			</div>
-			<div class="col-5 bg-dark text-center text-light d-flex flex-column rounded">
-				<button class="btn btn-danger rounded btn-large my-5" id="slap-button" onClick="pain('slap')">Slap</button>
+			<div class="col-5 bg-dark text-center text-light d-flex flex-column rounded justify-content-center">
+				<h2>ATTACK!</h2>
+				<button class="btn btn-danger rounded btn-large my-3" id="slap-button" onClick="pain('slap')">🤚 Slap</button>
 
-				<button class="btn btn-danger rounded btn-large my-5" id="punch-button" onClick="pain('punch')">Punch</button>
+				<button class="btn btn-danger rounded btn-large my-3" id="punch-button" onClick="pain('punch')">👊
+					Punch</button>
 
-				<button class="btn btn-danger rounded btn-large my-5" id="kick-button" onClick="pain('kick')">Kick</button>
+				<button class="btn btn-danger rounded btn-large my-3" id="kick-button" onClick="pain('kick')">🦶 Kick</button>
 
-				<button class="btn btn-success rounded btn-large my-5" id="reset-button" onClick="reset()">Reset</button>
+				<button class="btn btn-success rounded btn-large my-3" id="reset-button" onClick="reset()">♻ Reset</button>
 			</div>
 	</main>
 	<footer class="container-fluid text-center bg-dark text-light p-3 m-0">
