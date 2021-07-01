@@ -36,9 +36,10 @@ let attacks = {
 function pain(attackName) {
   let type = attacks[attackName]
   health -= type.damage
+  hits++
   if (health < 0) {
     health = 0
-    alert('they have died')
+    alert('You have killed Rocky!!')
     document.getElementById('slap-button').disabled = true
     document.getElementById('punch-button').disabled = true
     document.getElementById('kick-button').disabled = true
