@@ -8,3 +8,7 @@ body {
 main {
   flex-grow: 1;
 }
+
+img{
+  background-size: contain;
+}
