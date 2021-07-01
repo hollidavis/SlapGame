@@ -1,1 +1,10 @@
 /*Only use this file if you want to override bootstrap or create your own style*/
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
