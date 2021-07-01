@@ -8,21 +8,32 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
 		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link rel="stylesheet" href="game.css">
+	<link rel="stylesheet" href="cosmo.css">
 	<link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
 	<title>Slap Game</title>
 </head>
 
 <body>
+	<header class="container-fluid  bg-primary text-center p-3 ">
+		<h1>Slap Game</h1>
+		<span>Name: Rocky</span>
+		<span>Health: <span id="health">--</span></span>
+		<span>Hits: <span id="hits">--</span></span>
 
 
+	</header>
 
-
-
-
-
-
-
-
+	<main class="container">
+		<div class="row">
+			<div class="col">
+				<img class="" src="//placehold.it/200x200" alt="">
+			</div>
+	</main>
+	<footer class="container-fluid text-center bg-dark p-3">
+		<button class="btn btn-danger" onClick="slap()">Slap</button>
+		<button class="btn btn-danger" onClick="punch()">Punch</button>
+		<button class="btn btn-danger" onClick="kick()">Kick</button>
+	</footer>
 
 	<script src="game.js"></script>
 </body>
