@@ -33,6 +33,19 @@ let attacks = {
   }
 }
 
+let defense = {
+  flex: {
+    damage: 1
+  },
+
+  block: {
+    damage: 5
+  },
+  dodge: {
+    damage: 10
+  }
+}
+
 function pain(attackName) {
   let type = attacks[attackName]
   health -= type.damage
@@ -43,6 +56,18 @@ function pain(attackName) {
     document.getElementById('slap-button').disabled = true
     document.getElementById('punch-button').disabled = true
     document.getElementById('kick-button').disabled = true
+    document.getElementById('flex-button').disabled = true
+    document.getElementById('block-button').disabled = true
+    document.getElementById('dodge-button').disabled = true
+  }
+  update()
+}
+
+function defend(defenseName) {
+  let type = defense[defenseName]
+  health += type.damage
+  if (health > 100) {
+    health = 100
   }
   update()
 }
@@ -51,6 +76,9 @@ function reset() {
   document.getElementById('slap-button').disabled = false
   document.getElementById('punch-button').disabled = false
   document.getElementById('kick-button').disabled = false
+  document.getElementById('flex-button').disabled = false
+  document.getElementById('block-button').disabled = false
+  document.getElementById('dodge-button').disabled = false
   health = 100
   hits = 0
   update()
